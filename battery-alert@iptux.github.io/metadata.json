@@ -1,0 +1,8 @@
+{
+	"uuid": "battery-alert@iptux.github.io",
+	"name": "Battery Alert",
+	"description": "Get an alert when battery is low",
+	"version": 1,
+	"shell-version": [ "3.30", "3.32" ],
+	"url": "https://github.com/iptux/gnome-shell-battery-alert"
+}

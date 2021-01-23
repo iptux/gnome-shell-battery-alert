@@ -50,14 +50,14 @@ BatteryAlert.prototype = {
 
 	_onPowerChange: function() {
 		if ( this._uPowerProxy.IsPresent
-			&& this.isDischargeState(this._uPowerProxy.State) )
-		{
+			&& this.isDischargeState(this._uPowerProxy.State)
+		) {
 			if ( this._uPowerProxy.Percentage <= this.alertLevel ) {
 				if ( this._lastPercentage < 0 || this._lastPercentage > this.alertLevel ) {
-					this._notify(`battery low: ${this._uPowerProxy.Percentage}`);
+					this._notify(`battery low: ${this._uPowerProxy.Percentage}%`);
 				}
 			} else if ( ! this.isDischargeState(this._lastStatus) ) {
-				this._notify(`you are using battery`);
+				this._notify(`You are using battery!`);
 			}
 		}
 
